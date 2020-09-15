@@ -1,0 +1,17 @@
+1-) "Deletion of expired data" Suggestion:
+
+- "custom management commands" link: https://docs.djangoproject.com/en/1.11/howto/custom-management-commands
+
+- Django support "custom management commands".
+Class can be written with extending BaseCommand to delete expired data.
+Expired data can be sent to elasticsearch to log.
+
+
+2-) Kafka + Apache Spark + ElasticSearch Suggestion:
+
+- Vehicle data might be collected in Kafka brokers with "vehicle plate" topic. Then, processing data in parallel
+with Apache Spark to get navigation records and sent it to elastichsearch with "navigation_record" index.
+Getting sent data in last 48 hours by using Elasticsearch Query DSL via Postman, Logstash with grok or web-services.
+Kibana can be used for data visualization.
+
+Elasticsearch Range Query DSL: https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl-range-query.html
