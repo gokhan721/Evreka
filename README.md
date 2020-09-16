@@ -1,5 +1,5 @@
 # Evreka
-Navigation Records
+Navigation Folder(Part-One)
 
 - Getting navigation record data that is sent by vehicles in last 48 hours.
 
@@ -25,3 +25,8 @@ How to Run:
 Suggestions:
 
 - Suggestions are placed in "suggestions.txt" into navigation folder.
+
+
+Database_Model Folder(Part-two)
+
+- Entity-diagram and function in this folder.
